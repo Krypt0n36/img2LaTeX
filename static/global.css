@@ -1,0 +1,138 @@
+        body {
+            font-family: Inter, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: white;
+            background-color: white;
+            background-image: url('/static/grid.jpg');
+            background-size: 180px;
+        }
+
+        .overlay{
+            background-color: #ffffffde;
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              z-index: -2;
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+        .brand-logo {
+            width: 150px;
+            margin-bottom: 30px;
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            background-color: #eee;
+            border-radius: 5px;
+            margin-bottom: 70px;
+        }
+
+        #donate{
+            background-color: transparent;
+            border: 2px dashed #007bff;
+            border-radius: 30px;
+            padding: 15px 30px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 16px;
+            
+        }
+
+        #footnote{
+            position: absolute;
+            bottom: 10px;
+            opacity: 0.5;
+        }
+
+
+        .menu li {
+            margin: 0 15px;
+        }
+
+        .menu a {
+            color: #1a1616;
+            text-decoration: none;
+            padding: 15px;
+            display: block;
+            text-align: center;
+        }
+
+        .menu .active{
+
+        }
+
+        .menu a:hover {
+            color: black;
+        }
+
+        .upload-area {
+            width: 70%;
+            height: 200px;
+            border: 2px dashed #ccc;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #888;
+            font-size: 16px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+        .upload-area:hover {
+            border-color: #999;
+        }
+
+        .error-alert{
+            color: #f45f5f;
+            margin-bottom: 30px;
+        }
+        .convert-button {
+            padding: 20px 40px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .convert-button:hover {
+            background-color: #0056b3;
+        }
+        .code-snippet {
+            width: 70%;
+            background-color: #282c34;
+            color: #abb2bf;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+            overflow-x: auto;
+        }
+        .image-container {
+            width: 70%;
+            height: 150px;
+            border: 1px solid whitesmoke;
+            background-color: whitesmoke;
+            margin-top: 20px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 16px;
+        }

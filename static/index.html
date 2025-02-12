@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload and Conversion</title>
+    <link rel="stylesheet" href="/static/global.css" ></link>
+</head>
+<body>
+    <div class="overlay"></div>
+    <button id="donate">🍻 Buy me a beer</button>
+    <img src="/static/brand.png" alt="Brand Logo" class="brand-logo">
+
+
+    <ul class="menu">
+        <li><a href="#home" class="active">🎨 Image to LaTeX</a></li>
+        <li><a href="#services">📜 LaTeX to Img/PDF</a></li>
+        <li><a href="#contact">👑 Upgrade</a></li>
+    </ul>
+
+    <div class="upload-area" id="uploadArea">
+        <span id="uploadText">Click or drag and drop image here</span>
+        <img id="uploadedImage" src="#" alt="Uploaded Image" style="display: none;">
+        <button class="remove-button" id="removeButton">×</button>
+    </div>
+
+    <div class="error-alert" hidden>
+        <b>Oops</b>, an error occured while converting image to LaTeX. Please try again later.
+    </div>
+    
+    <button class="convert-button"  id="convertButton">Convert</button>
+    
+    <div class="code-snippet" id="imageContainer">
+        <pre><code id="codeSnippet">
+Your LaTeX code will be shown here..
+        </code></pre>
+    </div>
+
+
+    <span id="footnote">Made with ♥️ at Prof. M. Oekler's LaTeX seminar</span>
+</body>
+
+
+<script src="/static/global.js" ></script>
+</html>
