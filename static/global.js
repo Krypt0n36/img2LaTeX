@@ -52,7 +52,7 @@ convertButton.addEventListener('click', async () => {
     formData.append('image', selectedFile);
 
     try {
-        const response = await fetch('http://localhost:5000/api/convert', {
+        const response = await fetch('/api/convert', {
             method: 'POST',
             body: formData,
         });
@@ -65,10 +65,9 @@ convertButton.addEventListener('click', async () => {
 
         // Update code snippet
         codeSnippet.textContent = result.latex;
-        document.querySelector("#error-alert").hidden = true;
     } catch (error) {
         console.error('Error:', error);
-        document.querySelector("#error-alert").hidden = false;
+        document.querySelector(".error-alert").hidden = false;
     }
     convertButton.innerHTML = "Convert"
 
